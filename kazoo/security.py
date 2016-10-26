@@ -78,6 +78,8 @@ def make_acl(scheme, credential, read=False, write=False,
         :meth:`make_digest_acl_credential` method will create and
         return a credential appropriate for use with the `digest`
         scheme.
+    :param read: Read permission.
+    :type read: bool
     :param write: Write permission.
     :type write: bool
     :param create: Create permission.
@@ -119,6 +121,8 @@ def make_digest_acl(username, password, read=False, write=False,
 
     :param username: Username to use for the ACL.
     :param password: A plain-text password to hash.
+    :param read: Read permission.
+    :type read: bool
     :param write: Write permission.
     :type write: bool
     :param create: Create permission.
